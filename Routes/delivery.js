@@ -1,7 +1,7 @@
 import express from "express";
 const router = express.Router();
 
-import { getDelivery, getDelivery, createDelivery, updateDelivery, deleteDelivery } from "../Controllers/deliveryController.js";
+import { getDeliveries, getDelivery, createDelivery, updateDelivery, deleteDelivery } from "../Controllers/deliveryController.js";
 
 router.get("/", getDeliveries);
 router.get("/:id", getDelivery);
