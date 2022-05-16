@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: server-delivery-pod
+  labels:
+    name: server-delivery-pod
+    app: demo-server-delivery-pod
+
+spec:
+  containers:
+    - name: shop-delivery-pod
+      image: vup97/shop-delivery
+      ports:
+        - containerPort: 5000
