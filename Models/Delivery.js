@@ -1,17 +1,14 @@
 import mongoose from "mongoose";
 
 const DeliverySchema = new mongoose.Schema({
-  user_id: {
-    type: String,
-    required: true,
-  },
   order_id: {
-    type: String,
-    required: true,
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "Order",
   },
-  status: {
+  status:{
     type: String,
     required: true,
+    default: "Pending"
   },
 });
 

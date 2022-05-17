@@ -18,7 +18,7 @@ app.get("/", (req, res) => res.send("API Running"));
 
 app.use("/api/delivery", delivery);
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5003;
 
 //starting app
 app.listen(PORT, () => console.log(`Server up and running on port ${PORT}`));
