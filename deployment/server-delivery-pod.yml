@@ -11,4 +11,4 @@ spec:
     - name: shop-delivery-pod
       image: vup97/shop-delivery
       ports:
-        - containerPort: 5000
+        - containerPort: 5003
